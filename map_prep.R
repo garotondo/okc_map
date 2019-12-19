@@ -29,8 +29,8 @@ okc_map <- ggplot() +
 
 
 #Copy map for safety
-file_copy(path = "/Users/gracerotondo/Desktop/Coding/okc_map/graphics/map.rds", 
-          new_path = "/Users/gracerotondo/Desktop/Coding/okc_map/okc_shiny/map.rds", 
+file_copy(path = "/Users/gracerotondo/Desktop/Coding/oklahoma/graphics/map.rds", 
+          new_path = "/Users/gracerotondo/Desktop/Coding/oklahoma/shiny_map/map.rds", 
           overwrite = FALSE)
 
 okc_map
@@ -39,4 +39,4 @@ animate_map <- animate(okc_map)
 
 #Created a new directory called graphics
 dir.create("graphics")
-write_rds(okc_map, path = "/Users/gracerotondo/Desktop/Coding/okc_map/graphics/map.rds")
+write_rds(okc_map, path = "/Users/gracerotondo/Desktop/Coding/oklahoma/graphics/map.rds")

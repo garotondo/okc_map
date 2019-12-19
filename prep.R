@@ -32,8 +32,8 @@ locations <- st_as_sf(new_rds, coords = c("lng", "lat"), crs=4326)
 
 
 #write RDS
-write_rds(locations, "/Users/gracerotondo/Desktop/Coding/okc_map/clean-data/locations.rds")
-write_rds(tgz_data, "/Users/gracerotondo/Desktop/Coding/okc_map/clean-data/tgz.rds")
+write_rds(locations, "/Users/gracerotondo/Desktop/Coding/oklahoma/clean-data/locations.rds")
+write_rds(tgz_data, "/Users/gracerotondo/Desktop/Coding/oklahoma/clean-data/tgz.rds")
 write_rds()
 
 

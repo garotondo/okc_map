@@ -10,9 +10,6 @@ library(maps)
 library(base)
 library(tidyverse)
 
-#Read in my map using read_rds, named it my map
-#my_map <- read_rds("/Users/gracerotondo/Desktop/GOV1005\ /p_sets/ps-7-release-garotondo/graphics/map.rds")
-
 # Define UI for application that draws a map
 ui <- fluidPage(
     navbarPage("Oklahoma City Traffic Violations", theme = shinytheme("flatly"),
@@ -38,9 +35,8 @@ server <- function(input, output) {
         
         list(src = "map.gif",
              contentType = "image/gif",
-             width = "800px", 
-             height = "800px",
-             align = "right")
+             width = "600px", 
+             height = "600px")
     }, deleteFile = FALSE)
 }
 

@@ -23,8 +23,8 @@ ui <- fluidPage(
                          tags$a("https://github.com/garotondo/okc_map.git"))
                    ),
                    # Show a map plot of the generated distribution
-                   #mainPanel(
-                   plotOutput("mapPlot"))))
+                   mainPanel(
+                   plotOutput("mapPlot")))))
 
 
 # Define server logic required to draw a map plot
@@ -35,8 +35,8 @@ server <- function(input, output) {
         
         list(src = "map.gif",
              contentType = "image/gif",
-             width = "600px", 
-             height = "600px")
+             width = "700px", 
+             height = "700px")
     }, deleteFile = FALSE)
 }
 

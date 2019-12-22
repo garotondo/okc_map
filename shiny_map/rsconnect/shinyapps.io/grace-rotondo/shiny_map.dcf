@@ -1,0 +1,12 @@
+name: shiny_map
+title: shiny_map
+username:
+account: grace-rotondo
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 1429204
+bundleId: 2685412
+url: https://grace-rotondo.shinyapps.io/shiny_map/
+when: 1576947627.41176
+asMultiple: FALSE
+asStatic: FALSE

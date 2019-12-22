@@ -10,6 +10,7 @@ library(maps)
 library(base)
 library(tidyverse)
 
+
 # Define UI for application that draws a map
 ui <- fluidPage(
     navbarPage("Oklahoma City Traffic Violations", theme = shinytheme("flatly"),
@@ -23,20 +24,21 @@ ui <- fluidPage(
                          tags$a("https://github.com/garotondo/okc_map.git"))
                    ),
                    # Show a map plot of the generated distribution
-                   mainPanel(
-                   plotOutput("mapPlot")))))
+                   #mainPanel(
+                   plotOutput("mapPlot"))))
 
 
 # Define server logic required to draw a map plot
 server <- function(input, output) {
     output$mapPlot <- renderImage({
         x <- read_rds("map.rds")
-        anim_save("map.gif", x)
+        #anim_save("map.gif", x)
         
         list(src = "map.gif",
              contentType = "image/gif",
-             width = "700px", 
-             height = "700px")
+             width = "800px", 
+             height = "800px",
+             align = "right")
     }, deleteFile = FALSE)
 }
 
